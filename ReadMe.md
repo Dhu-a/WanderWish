@@ -1,4 +1,5 @@
 <h1 align="center">WanderWish</h1>
+<p align="center"><img alt="React Badge" src="https://img.shields.io/badge/made_with-react-61DAFB?logo=React&logoColor=white"><img alt="CSS Badge" src="https://img.shields.io/badge/made_with-css-663399?logo=CSS&logoColor=white"><img alt="HTML Badge" src="https://img.shields.io/badge/made_with-html-E34F26?logo=HTML&logoColor=white"></p>
 
 <h2>Visão Geral</h2>
     <p>
@@ -21,13 +22,6 @@
                 <li>Link do Google Maps</li>
             </ul>
         </li>
-    </ul>
-
-<h2>Tecnologias Utilizadas</h2>
-    <ul>
-        <li><strong>React</strong>: Para construir a interface do usuário.</li>
-        <li><strong>CSS/HTML</strong>: Para estilizar e estruturar a aplicação.</li>
-        <li><strong>API REST Countries</strong>: Para buscar dados dos países.</li>
     </ul>
 
 <h2>Contribuidores</h2>

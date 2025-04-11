@@ -49,9 +49,10 @@ h1::after {
   transform: translateY(-50%) rotate(180deg);
 }
 .container {
+  display: flex;
   width: 100vw;
-  margin: 0 auto;
-  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-content {

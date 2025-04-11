@@ -1,42 +1,52 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@font-face {
+  font-family: "PirataOne";
+  src: url("../fontes/PirataOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.PirataOne{
+  font-family: "PirataOne", sans-serif;
+}
+
+:root {
+  --pirate-brown: #8B4513;
+  --pirate-gold: #D4AF37;
+  --pirate-red: #8B0000;
+  --pirate-black: #1A1A1A;
+  --pirate-cream: #F5F5DC;
+}
+body {
+  background-image: url('./images/wood-texture.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--pirate-cream);
+  font-family: "PirataOne", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1 {
   text-align: center;
+  color: #333;
+  margin-bottom: 30px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1::before,
+h1::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  background-image: url('./images/compass.png');
+  background-size: contain;
+  transform: translateY(-50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+h1::before { left: 20%; }
+h1::after { 
+  right: 20%;
+  transform: translateY(-50%) rotate(180deg);
 }

@@ -159,3 +159,28 @@ button.delete:hover {
   position: sticky;
   top: 20px;
 }
+
+.country-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 10px 0;
+}
+
+.country-card img {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.country-card h4 {
+  margin: 5px 0;
+}
+
+.country-card p {
+  margin: 3px 0;
+}

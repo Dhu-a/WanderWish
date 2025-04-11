@@ -37,7 +37,32 @@ function App() {
                             <button onClick={getRandomCountry}>Get Another Suggestion</button>
                         </div>
                     )}
+                    <div className="wishlist">
+                        {wishlist.map(destination => (
+                        <li key={destination.id} className={destination.visited ? 'visited' : ''}>
+                            <div className="destination-header">
+                            <img src={destination.flag} alt={`${destination.country} flag`} style={{width: '30px'}} />
+                            <h2>{destination.country}</h2>
+                            </div>
+                            <div className="destination-details">
+                            <p>Capital: {destination.capital}</p>
+                            <p>Currency: {destination.currency} ({destination.currencySymbol})</p>
+                            <p>Notes: {destination.notes}</p>
+                            <a href={destination.maps} target="_blank" rel="noopener noreferrer">View on Maps</a>
+                            <p>{destination.visited ? 'Visited ✅' : 'Not Visited ❌'}</p>
+                            </div>
 
+                            <div className="botoes">
+                            <button onClick={() => toggleVisited(destination.id)}>
+                                Mark as {destination.visited ? 'Not Visited' : 'Visited'}
+                            </button>
+                            <button onClick={() => deleteDestination(destination.id)} className="delete">
+                                Delete
+                            </button>
+                            </div>
+                        </li>
+                        ))}
+                    </div>
                 </div>
                 )
                 }

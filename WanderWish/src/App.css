@@ -178,9 +178,11 @@ button.delete:hover {
 }
 
 .country-card h4 {
+  color: var(--pirate-black);
   margin: 5px 0;
 }
 
 .country-card p {
+  color: var(--pirate-black);
   margin: 3px 0;
 }

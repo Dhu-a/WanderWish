@@ -165,7 +165,7 @@ button.delete:hover {
   align-items: center;
   gap: 10px;
   padding: 15px;
-  background-color: white;
+  background-color: var(--pirate-cream);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   margin: 10px 0;

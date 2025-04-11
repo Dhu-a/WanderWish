@@ -50,7 +50,6 @@ h1::after {
   transform: translateY(-50%) rotate(180deg);
 }
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }

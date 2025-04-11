@@ -29,7 +29,6 @@ body {
 
 h1 {
   text-align: center;
-  color: var(--pirate-black);
   margin-bottom: 30px;
 }
 
@@ -112,6 +111,7 @@ button.delete:hover {
 
 .wishlist li {
   list-style: none;
+  width: 30vw;
   padding: 20px;
   background-color: var(--pirate-cream);
   border-radius: 8px;
@@ -177,11 +177,9 @@ button.delete:hover {
 }
 
 .country-card h4 {
-  color: var(--pirate-black);
   margin: 5px 0;
 }
 
 .country-card p {
-  color: var(--pirate-black);
   margin: 3px 0;
 }

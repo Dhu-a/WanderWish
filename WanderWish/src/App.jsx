@@ -13,6 +13,27 @@ function App() {
                     {randomCountry && (
                         <div className="random-suggestion">
                             <h3>Suggested Destination:</h3>
+                            <div className="country-card">
+                                <img src={randomCountry.flag} alt={${randomCountry.name} flag} style={{width: '50px'}} />
+                                <h4>{randomCountry.name}</h4>
+                                <p>Capital: {randomCountry.capital}</p>
+                                <p>Currency: {randomCountry.currency} ({randomCountry.currencySymbol})</p>
+                                <a href={randomCountry.maps} target="_blank" rel="noopener noreferrer">View on Maps</a>
+                                <button onClick={() => {
+                                    const newDestination = {
+                                        id: Date.now(),
+                                        country: randomCountry.name,
+                                        capital: randomCountry.capital,
+                                        currency: randomCountry.currency,
+                                        currencySymbol: randomCountry.currencySymbol,
+                                        flag: randomCountry.flag,
+                                        maps: randomCountry.maps,
+                                        notes: '',
+                                        visited: false
+                                    };
+                                    setWishlist([newDestination, ...wishlist]);
+                                }}>Add to Wishlist</button>
+                            </div>
                             <button onClick={getRandomCountry}>Get Another Suggestion</button>
                         </div>
                     )}

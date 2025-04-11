@@ -150,3 +150,12 @@ button.delete:hover {
 .destination-details a:hover {
   text-decoration: underline;
 }
+
+.random-suggestion {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 20px;
+}

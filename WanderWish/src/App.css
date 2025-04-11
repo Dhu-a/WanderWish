@@ -29,7 +29,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #333;
+  color: var(--pirate-black);
   margin-bottom: 30px;
 }
 
@@ -75,13 +75,13 @@ h1::after {
 
 .form input {
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--pirate-cream);
   border-radius: 4px;
 }
 button {
   padding: 8px 16px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--pirate-gold);
+  color: var(--pirate-cream);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -89,15 +89,15 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: var(--pirate-gold);
 }
 
 button.delete {
-  background-color: #f44336;
+  background-color: var(--pirate-brown);
 }
 
 button.delete:hover {
-  background-color: #da190b;
+  background-color: var(--pirate-red);
 }
 .botoes {
   display: flex;
@@ -114,13 +114,13 @@ button.delete:hover {
 .wishlist li {
   list-style: none;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: var(--pirate-cream);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .wishlist li.visited {
-  background-color: #e8f5e9;
+  background-color: var(--pirate-cream);
 }
 
 .destination-header {
@@ -143,7 +143,7 @@ button.delete:hover {
 }
 
 .destination-details a {
-  color: #2196F3;
+  color: var(--pirate-gold);
   text-decoration: none;
 }
 
@@ -152,35 +152,10 @@ button.delete:hover {
 }
 
 .random-suggestion {
-  background-color: #f0f8ff;
+  background-color: var(--pirate-cream);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
   position: sticky;
   top: 20px;
-}
-
-.country-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 15px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin: 10px 0;
-}
-
-.country-card img {
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.country-card h4 {
-  margin: 5px 0;
-}
-
-.country-card p {
-  margin: 3px 0;
 }

@@ -20,7 +20,7 @@ body {
   background-image: url('./images/wood-texture.jpg');
   background-size: cover;
   background-attachment: fixed;
-  color: var(--pirate-cream);
+  color: var(--pirate-black);
   font-family: "PirataOne", sans-serif;
   margin: 0;
   padding: 0;

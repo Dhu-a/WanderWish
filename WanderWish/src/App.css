@@ -49,18 +49,24 @@ h1::after {
   transform: translateY(-50%) rotate(180deg);
 }
 .container {
-  width: 100vw;
+  background-image: url('../imagens/old_map.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
 }
 
 .main-content {
-  width: 100%;
+  width: 50%;
   display: flex;
   gap: 20px;
+  margin: auto;
 }
 
 .left-section {
   flex: 1;
   max-width: 400px;
+  
+
 }
 
 .form {

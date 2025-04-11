@@ -17,7 +17,7 @@
   --pirate-cream: #F5F5DC;
 }
 body {
-  background-image: url('./images/wood-texture.jpg');
+  background-image: url('/WanderWish/imagens/old_map.jpg');
   background-size: cover;
   background-attachment: fixed;
   color: var(--pirate-black);
@@ -40,7 +40,6 @@ h1::after {
   top: 50%;
   width: 60px;
   height: 60px;
-  background-image: url('./images/compass.png');
   background-size: contain;
   transform: translateY(-50%);
 }

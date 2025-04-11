@@ -99,3 +99,21 @@ button.delete {
 button.delete:hover {
   background-color: #da190b;
 }
+.wishlist {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wishlist li {
+  list-style: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.wishlist li.visited {
+  background-color: #e8f5e9;
+}

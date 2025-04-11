@@ -80,32 +80,44 @@ function App() {
   }
 
   const handleChange = (e) => {
-    if (e.target.name === 'country') {
-      fetchCountryData(e.target.value)
-    }
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const addDestination = (e) => {
+  const addDestination = async (e) => {
     e.preventDefault()
     if (!formData.country) return
 
-    const newDestination = {
-      id: Date.now(),
-      ...formData,
-      visited: false,
+    try {
+      const response = await fetch(`https://restcountries.com/v3.1/name/${formData.country}`)
+      const data = await response.json()
+      if (data.length > 0) {
+        const country = data[0]
+        const currency = Object.values(country.currencies)[0]
+        const newDestination = {
+          id: Date.now(),
+          country: country.name.common,
+          capital: country.capital?.[0] || 'N/A',
+          currency: currency?.name || 'N/A',
+          currencySymbol: currency?.symbol || 'N/A',
+          flag: country.flags.svg,
+          maps: country.maps.googleMaps,
+          notes: formData.notes,
+          visited: false
+        }
+        setWishlist([newDestination, ...wishlist])
+        setFormData({
+          country: '',
+          capital: '',
+          currency: '',
+          currencySymbol: '',
+          flag: '',
+          maps: '',
+          notes: ''
+        })
+      }
+    } catch (error) {
+      console.error('Error fetching country data:', error)
     }
-
-    setWishlist([newDestination, ...wishlist])
-    setFormData({
-      country: '',
-      capital: '',
-      currency: '',
-      currencySymbol: '',
-      flag: '',
-      maps: '',
-      notes: ''
-    })
   }
 
   const toggleVisited = (id) => {

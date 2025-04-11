@@ -99,6 +99,11 @@ button.delete {
 button.delete:hover {
   background-color: #da190b;
 }
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
 .wishlist {
   flex: 2;
   display: flex;

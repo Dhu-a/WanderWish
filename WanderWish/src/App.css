@@ -60,3 +60,21 @@ h1::after {
   display: flex;
   gap: 20px;
 }
+
+.left-section {
+  flex: 1;
+  max-width: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

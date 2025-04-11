@@ -117,3 +117,10 @@ button.delete:hover {
 .wishlist li.visited {
   background-color: #e8f5e9;
 }
+
+.destination-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}

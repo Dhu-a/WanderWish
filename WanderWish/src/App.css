@@ -19,6 +19,8 @@
 body {
   background-image: url('/WanderWish/imagens/old_map.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--pirate-black);
   font-family: "PirataOne", sans-serif;
@@ -51,8 +53,13 @@ h1::after {
 .container {
   background-image: url('../imagens/old_map.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .main-content {
